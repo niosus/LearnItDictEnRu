@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <TextView
+            android:id="@+id/txtWelcome"
+            android:gravity="center"
+            android:text="@string/welcome"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large">
+    </TextView>
+    <TextView
+            android:id="@+id/txtExplanation"
+            android:gravity="center"
+            android:text="@string/explanation"
+            android:layout_below="@id/txtWelcome"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:textColor="@android:color/holo_blue_dark">
+
+    </TextView>
+    <TextView
+            android:id="@+id/txtDelete"
+            android:gravity="center"
+            android:text="@string/delete_the_app"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium">
+
+    </TextView>
+    <TextView
+            android:id="@+id/txtCopying"
+            android:gravity="center"
+            android:text="@string/copying"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="@android:color/holo_blue_dark">
+
+    </TextView>
+    <ProgressBar
+        android:id="@+id/progressBar"
+            android:layout_alignParentBottom="true"
+            style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    <Button
+            android:id="@+id/btnStart"
+            android:layout_above="@id/progressBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/start_copying">
+    </Button>
+   <TextView
+           android:id="@+id/txtSuccess"
+           android:gravity="center"
+           android:layout_above="@id/btnStart"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/success"
+           android:textStyle="bold"
+           android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+           android:textColor="@android:color/holo_green_light">
+   </TextView>
+</RelativeLayout>
+
